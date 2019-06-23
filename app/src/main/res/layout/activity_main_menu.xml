@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+    >
+
+    <com.example.myapplication.CustomBmb
+        android:id="@+id/playBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="100dp"
+        >
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:src="@drawable/play" />
+0
+    </com.example.myapplication.CustomBmb>
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playBut"
+        >
+
+        <ImageView
+            android:id="@+id/bmbLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/s3" />
+
+    </com.nightonke.boommenu.BoomMenuButton>
+
+    <com.example.myapplication.CustomBmb
+        android:id="@+id/highScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/playBut"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/trophy"/>
+
+    </com.example.myapplication.CustomBmb>
+
+    <com.example.myapplication.CustomBmb
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/playBut"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/settings" />
+
+    </com.example.myapplication.CustomBmb>
+
+
+</RelativeLayout>
+
