@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -53,6 +54,53 @@ public class GameBg {
             }
         }
         return true;
+    }
+
+    public ArrayList<Integer> whichPiecesShouldMove(int x, int y){
+        ArrayList<Integer> pieces = new ArrayList<>();
+        int emptyPieceX = -1, emptyPieceY = -1, selectedPieceX = -1, selectedPieceY = -1, flag = 0;
+        for(int i=0; i<boardSize; i++){
+            for(int j=0; j<boardSize; j++){
+                if(boardArr[i][j].getX()==x && boardArr[i][j].getY()==y){
+                    selectedPieceX = i;
+                    selectedPieceY = j;
+                    flag++;
+                }
+                else if(boardArr[i][j].getX()==boardSize-1 && boardArr[i][j].getY()==boardSize-1){
+                    emptyPieceX = i;
+                    emptyPieceY = j;
+                    flag++;
+                }
+                if(flag == 2){
+                    break;
+                }
+            }
+        }
+        if(emptyPieceX == selectedPieceX){
+            if(emptyPieceY>selectedPieceY){
+                for(int i=emptyPieceY-1; i>=selectedPieceY; i--){
+                    pieces.add(boardArr[selectedPieceX][i].getX()*boardSize+boardArr[selectedPieceX][i].getY());
+                }
+            }
+            else{
+                for(int i=emptyPieceY+1; i<=selectedPieceY; i++){
+                    pieces.add(boardArr[selectedPieceX][i].getX()*boardSize+boardArr[selectedPieceX][i].getY());
+                }
+            }
+        }
+        else if(emptyPieceY == selectedPieceY){
+            if(emptyPieceX>selectedPieceX){
+                for(int i=emptyPieceX-1; i>=selectedPieceX; i--){
+                    pieces.add(boardArr[i][selectedPieceY].getX()*boardSize+boardArr[i][selectedPieceY].getY());
+                }
+            }
+            else{
+                for(int i=emptyPieceX+1; i<=selectedPieceX; i++){
+                    pieces.add(boardArr[i][selectedPieceY].getX()*boardSize+boardArr[i][selectedPieceY].getY());
+                }
+            }
+        }
+        return pieces;
     }
 
     public String move(int x, int y){
