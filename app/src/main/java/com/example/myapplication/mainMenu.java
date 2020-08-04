@@ -1,6 +1,7 @@
 package com.example.myapplication;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
 import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
@@ -21,12 +23,15 @@ public class mainMenu extends AppCompatActivity {
     static Integer size = 3;
     ImageView bmbLogo;
     Integer[] pics;
-    Button playBut;
+    Typeface tf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        TextView logoText = findViewById(R.id.logoText);
+        tf = Typeface.createFromAsset(getAssets(),  "fonts/comforta.ttf");
+        logoText.setTypeface(tf);
         pics = new Integer[]{
                 R.drawable.s3,
                 R.drawable.s4,

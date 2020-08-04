@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GameScreen"></activity>
-        <activity android:name=".Settings" />
-        <activity android:name=".HighScore" />
-        <activity android:name=".mainMenu" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".GameScreen"
+            android:screenOrientation="sensorPortrait"></activity>
+        <activity android:name=".Settings"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".HighScore"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".mainMenu"
+            android:screenOrientation="sensorPortrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

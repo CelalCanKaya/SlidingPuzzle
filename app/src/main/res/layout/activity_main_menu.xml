@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground">
+
+<RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
     >
 
-    <com.example.myapplication.CustomBmb
-        android:id="@+id/playBut"
+    <LinearLayout
+        android:id="@id/logoLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" SLIDING PUZZLE "
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:textSize="36dp"
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/pink"/>
+
+    </LinearLayout>
+
+    <com.example.myapplication.CustomBmb
+        android:id="@+id/playBut"
+        android:layout_below="@+id/logoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="100dp"
         >
 
@@ -75,6 +106,6 @@
 
     </com.example.myapplication.CustomBmb>
 
-
 </RelativeLayout>
 
+</RelativeLayout>
