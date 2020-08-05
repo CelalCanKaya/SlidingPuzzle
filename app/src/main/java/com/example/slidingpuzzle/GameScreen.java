@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.slidingpuzzle;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -21,9 +21,7 @@ import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.myapplication.Enums.Enums;
-
-import org.w3c.dom.Text;
+import com.example.slidingpuzzle.Enums.Enums;
 
 import java.util.ArrayList;
 
@@ -80,7 +78,7 @@ public class GameScreen extends AppCompatActivity {
         animSet = new AnimatorSet();
         sharedPreferences = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         editor = sharedPreferences.edit();
-        isVolumeOn = sharedPreferences.getBoolean("isVolumeOn", false);
+        isVolumeOn = sharedPreferences.getBoolean("isVolumeOn", true);
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

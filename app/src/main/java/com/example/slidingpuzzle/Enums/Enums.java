@@ -1,4 +1,4 @@
-package com.example.myapplication.Enums;
+package com.example.slidingpuzzle.Enums;
 
 public class Enums {
     public enum DialogBoxes {
