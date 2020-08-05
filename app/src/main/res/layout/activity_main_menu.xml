@@ -39,7 +39,7 @@
 
     </LinearLayout>
 
-    <com.example.slidingpuzzle.CustomBmb
+    <com.cckstudio.slidingpuzzle.CustomBmb
         android:id="@+id/playBut"
         android:layout_below="@+id/logoLayout"
         android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         android:layout_gravity="center"
         android:src="@drawable/play" />
 
-    </com.example.slidingpuzzle.CustomBmb>
+    </com.cckstudio.slidingpuzzle.CustomBmb>
 
 
     <com.nightonke.boommenu.BoomMenuButton
@@ -74,7 +74,7 @@
 
     </com.nightonke.boommenu.BoomMenuButton>
 
-    <com.example.slidingpuzzle.CustomBmb
+    <com.cckstudio.slidingpuzzle.CustomBmb
         android:id="@+id/highScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,9 +88,9 @@
             android:layout_gravity="center"
             android:src="@drawable/trophy"/>
 
-    </com.example.slidingpuzzle.CustomBmb>
+    </com.cckstudio.slidingpuzzle.CustomBmb>
 
-    <com.example.slidingpuzzle.CustomBmb
+    <com.cckstudio.slidingpuzzle.CustomBmb
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
             android:layout_gravity="center"
             android:src="@drawable/settings" />
 
-    </com.example.slidingpuzzle.CustomBmb>
+    </com.cckstudio.slidingpuzzle.CustomBmb>
 
 </RelativeLayout>
 

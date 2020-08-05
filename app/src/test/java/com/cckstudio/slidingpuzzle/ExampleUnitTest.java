@@ -1,4 +1,4 @@
-package com.example.slidingpuzzle;
+package com.cckstudio.slidingpuzzle;
 
 import org.junit.Test;
 

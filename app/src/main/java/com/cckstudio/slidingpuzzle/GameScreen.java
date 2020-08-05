@@ -1,4 +1,4 @@
-package com.example.slidingpuzzle;
+package com.cckstudio.slidingpuzzle;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -21,7 +21,7 @@ import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.slidingpuzzle.Enums.Enums;
+import com.cckstudio.slidingpuzzle.Enums.Enums;
 
 import java.util.ArrayList;
 

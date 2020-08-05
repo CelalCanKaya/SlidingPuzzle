@@ -1,4 +1,4 @@
-package com.example.slidingpuzzle.Enums;
+package com.cckstudio.slidingpuzzle.Enums;
 
 public class Enums {
     public enum DialogBoxes {

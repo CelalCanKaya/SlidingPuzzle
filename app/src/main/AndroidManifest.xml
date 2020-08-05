@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.slidingpuzzle">
+    package="com.cckstudio.slidingpuzzle">
 
     <application
         android:allowBackup="true"
@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.slidingpuzzle.GameScreen"
+        <activity android:name="com.cckstudio.slidingpuzzle.GameScreen"
             android:screenOrientation="sensorPortrait"></activity>
-        <activity android:name="com.example.slidingpuzzle.Settings"
+        <activity android:name="com.cckstudio.slidingpuzzle.Settings"
             android:screenOrientation="sensorPortrait"/>
-        <activity android:name="com.example.slidingpuzzle.HighScore"
+        <activity android:name="com.cckstudio.slidingpuzzle.HighScore"
             android:screenOrientation="sensorPortrait"/>
-        <activity android:name="com.example.slidingpuzzle.mainMenu"
+        <activity android:name="com.cckstudio.slidingpuzzle.mainMenu"
             android:screenOrientation="sensorPortrait"/>
-        <activity android:name="com.example.slidingpuzzle.MainActivity"
+        <activity android:name="com.cckstudio.slidingpuzzle.MainActivity"
             android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

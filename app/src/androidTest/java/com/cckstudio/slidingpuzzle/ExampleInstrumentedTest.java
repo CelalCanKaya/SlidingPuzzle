@@ -1,4 +1,4 @@
-package com.example.slidingpuzzle;
+package com.cckstudio.slidingpuzzle;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

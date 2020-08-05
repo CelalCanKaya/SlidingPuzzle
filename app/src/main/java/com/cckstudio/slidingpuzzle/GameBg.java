@@ -1,4 +1,4 @@
-package com.example.slidingpuzzle;
+package com.cckstudio.slidingpuzzle;
 
 import java.util.ArrayList;
 import java.util.Arrays;

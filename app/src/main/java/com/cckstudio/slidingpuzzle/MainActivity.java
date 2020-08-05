@@ -1,4 +1,4 @@
-package com.example.slidingpuzzle;
+package com.cckstudio.slidingpuzzle;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
