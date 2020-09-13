@@ -11,15 +11,16 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayout;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.gridlayout.widget.GridLayout;
 
 import com.cckstudio.slidingpuzzle.Enums.Enums;
 
@@ -36,7 +37,7 @@ public class GameScreen extends AppCompatActivity {
     Typeface tf;
     Integer size = 3, moveCount = 0;
     boolean isTimerStarted = false;
-    private Button pieces[];
+    private Button[] pieces;
     AnimatorSet animSet;
     ImageButton pauseButton;
     long timeWhenStopped = 0;
@@ -129,7 +130,7 @@ public class GameScreen extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     dialog.dismiss();
-                    Intent intent = new Intent(GameScreen.this, mainMenu.class);
+                    Intent intent = new Intent(GameScreen.this, MainMenu.class);
                     startActivity(intent);
                     finish();
                 }
@@ -179,7 +180,7 @@ public class GameScreen extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     dialog.dismiss();
-                    Intent intent = new Intent(GameScreen.this, mainMenu.class);
+                    Intent intent = new Intent(GameScreen.this, MainMenu.class);
                     startActivity(intent);
                     finish();
                 }

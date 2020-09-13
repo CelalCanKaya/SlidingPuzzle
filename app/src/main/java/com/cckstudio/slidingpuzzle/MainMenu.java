@@ -1,10 +1,11 @@
 package com.cckstudio.slidingpuzzle;
+
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
 import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
 import com.nightonke.boommenu.BoomButtons.SimpleCircleButton;
@@ -12,7 +13,7 @@ import com.nightonke.boommenu.BoomMenuButton;
 import com.nightonke.boommenu.ButtonEnum;
 import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 
-public class mainMenu extends AppCompatActivity {
+public class MainMenu extends AppCompatActivity {
 
     static Integer size = 3;
     ImageView bmbLogo;
@@ -67,8 +68,10 @@ public class mainMenu extends AppCompatActivity {
         CustomBmb playBut = findViewById(R.id.playBut);
         playBut.setPage("play");
         playBut.setButtonRadius( (int) (playBut.getButtonRadius()*1.60));
-
     }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

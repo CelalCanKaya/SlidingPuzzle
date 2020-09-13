@@ -42,21 +42,21 @@ public class CustomBmb extends BoomMenuButton {
             case "score": {
                 Intent intent = new Intent(context, HighScore.class);
                 context.startActivity(intent);
-                mainMenu.size = 3;
+                MainMenu.size = 3;
                 ((Activity) context).finish();
                 break;
             }
             case "settings": {
                 Intent intent = new Intent(context, Settings.class);
                 context.startActivity(intent);
-                mainMenu.size = 3;
+                MainMenu.size = 3;
                 ((Activity) context).finish();
                 break;
             }
             case "play": {
                 Intent intent = new Intent(context, GameScreen.class);
-                intent.putExtra("size_string", mainMenu.size);
-                mainMenu.size = 3;
+                intent.putExtra("size_string", MainMenu.size);
+                MainMenu.size = 3;
                 context.startActivity(intent);
                 ((Activity) context).finish();
                 break;
